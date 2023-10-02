@@ -163,7 +163,7 @@ def train_test_split(X, y, train_frac):
                 of original data in X and y.
                 The number of samples in train_data is equal to
                 round(n_samples*train_frac)
-    test_data:  Tuple (X_train,y_train), corresponding to training "split"
+    test_data:  Tuple (X_train,y_train), corresponding to testing "split"
                 of original data in X and y.
                 The samples contained in test_data corresponds to the elments 
                 of X and y not included in train_data.
