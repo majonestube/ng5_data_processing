@@ -182,6 +182,9 @@ def test_train_test_split(X_y_persons_dataset):  # 4p
     assert y_train.shape == (7,)
     assert X_test.shape == (3,4)
     assert y_test.shape == (3,)
+
+    # Check that elements have been shuffled
+    assert not (np.all(X_train == X[0:7]) or np.all(X_test == X[0:3]))
     
     # Concatenate X and y and convert to lists for easier comparison of rows,
     # using expand_dims(y,axis=0) to make y a single-column matrix  
